@@ -65,12 +65,6 @@ The site automatically deploys to GitHub Pages via GitHub Actions when changes a
 
 **Deployment workflow:** `.github/workflows/deploy.yml`
 
-### Custom Domain Setup
-
-The site is hosted at https://www.patrady.com with DNS configured as follows:
-- CNAME record: `www` → `patrady.github.io`
-- Domain forwarding: `patrady.com` → `www.patrady.com` (301 redirect)
-
 ## Project Structure
 
 ```
