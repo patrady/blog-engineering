@@ -25,6 +25,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/patrady/blog-engineering' },
   ],
   footNote: `
-    © ${new Date().getFullYear()} Patrick Rady. All rights reserved.
+    © ${new Date().getFullYear()} Patrick Brady. All rights reserved.
   `,
 };
