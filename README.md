@@ -7,6 +7,7 @@ Personal software engineering blog covering web development, system design, and 
 ## About
 
 This is my personal blog where I write about software engineering topics including:
+
 - Web development best practices and patterns
 - System design and architecture
 - Technical deep dives into interesting problems
@@ -31,17 +32,20 @@ This is my personal blog where I write about software engineering topics includi
 ### Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/patrady/blog-engineering.git
 cd blog-engineering
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -50,14 +54,14 @@ The site will be available at `http://localhost:4321/`
 
 ### Available Commands
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Install dependencies                             |
-| `npm run dev`          | Start dev server at `localhost:4321`            |
-| `npm run build`        | Build production site to `./dist/`              |
-| `npm run preview`      | Preview production build locally                 |
-| `npm run check`        | Run Astro checks, ESLint, and Prettier          |
-| `npm run fix`          | Auto-fix linting and formatting issues          |
+| Command           | Action                                 |
+| :---------------- | :------------------------------------- |
+| `npm install`     | Install dependencies                   |
+| `npm run dev`     | Start dev server at `localhost:4321`   |
+| `npm run build`   | Build production site to `./dist/`     |
+| `npm run preview` | Preview production build locally       |
+| `npm run check`   | Run Astro checks, ESLint, and Prettier |
+| `npm run fix`     | Auto-fix linting and formatting issues |
 
 ## Deployment
 
