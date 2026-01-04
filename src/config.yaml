@@ -11,7 +11,7 @@ metadata:
   title:
     default: Patrick Rady
     template: '%s — Patrick Rady'
-  description: "Software engineering blog covering web development, system design, and technical deep dives."
+  description: 'Software engineering blog covering web development, system design, and technical deep dives.'
   robots:
     index: true
     follow: true
