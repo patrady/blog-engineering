@@ -1,6 +1,6 @@
 ---
 publishDate: 2026-01-04T00:00:00Z
-author: Patrick Rady
+author: Patrick Brady
 title: Building My First Blog with Claude Code
 excerpt: How I built this engineering blog using Claude Code, Astro, and GitHub Pages in an afternoon.
 image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80

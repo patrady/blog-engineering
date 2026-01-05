@@ -1,5 +1,5 @@
 site:
-  name: Patrick Rady
+  name: Patrick Brady
   site: 'https://www.patrady.com'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Patrick Rady
-    template: '%s — Patrick Rady'
+    default: Patrick Brady
+    template: '%s — Patrick Brady'
   description: 'Software engineering blog covering web development, system design, and technical deep dives.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Patrick Rady
+    site_name: Patrick Brady
     images:
       - url: '~/assets/images/default.png'
         width: 1200

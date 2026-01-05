@@ -1,4 +1,4 @@
-# Patrick Rady's Engineering Blog
+# Patrick Brady's Engineering Blog
 
 Personal software engineering blog covering web development, system design, and technical deep dives.
 
@@ -96,7 +96,7 @@ Blog posts are written in Markdown (`.md`) or MDX (`.mdx`) and placed in `src/da
 ```yaml
 ---
 publishDate: 2026-01-04T00:00:00Z
-author: Patrick Rady
+author: Patrick Brady
 title: Your Post Title
 excerpt: Brief description for previews and SEO
 image: https://example.com/image.jpg
