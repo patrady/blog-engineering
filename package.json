@@ -1,11 +1,11 @@
 {
-  "name": "@onwidget/astrowind",
-  "version": "1.0.0-beta.52",
-  "description": "AstroWind: A free template using Astro 5.0 and Tailwind CSS. Astro starter theme.",
+  "name": "@patrady/blog-engineering",
+  "version": "0.0.1",
+  "description": "Personal blog about engineering topics.",
   "type": "module",
   "private": true,
   "engines": {
-    "node": "^18.17.1 || ^20.3.0 || >= 21.0.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "dev": "astro dev",

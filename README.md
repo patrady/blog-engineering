@@ -26,7 +26,7 @@ This is my personal blog where I write about software engineering topics includi
 
 ### Prerequisites
 
-- Node.js 18.17.1 or higher
+- Node.js 24.0.0 or higher
 - npm
 
 ### Setup
