@@ -2,10 +2,7 @@
 import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
-import Announcement from '~/components/widgets/Announcement.astro';
-
-import { headerData, footerData } from '~/navigation';
-
+import { getAsset, getBlogPermalink, getPermalink } from '~/utils/permalinks';
 import type { MetaData } from '~/types';
 
 export interface Props {
@@ -16,16 +13,33 @@ const { metadata } = Astro.props;
 ---
 
 <Layout metadata={metadata}>
-  <slot name="announcement">
-    <Announcement />
-  </slot>
   <slot name="header">
-    <Header {...headerData} isSticky showRssFeed showToggleTheme />
+    <Header
+      links={[
+        {
+          text: 'Blog',
+          href: getBlogPermalink(),
+        },
+        {
+          text: 'About',
+          href: getPermalink('/about'),
+        },
+      ]}
+      isSticky
+      showRssFeed
+      showToggleTheme
+    />
   </slot>
   <main>
     <slot />
   </main>
   <slot name="footer">
-    <Footer {...footerData} />
+    <Footer
+      footNote={`© ${new Date().getFullYear()} Patrick Brady. All rights reserved.`}
+      socialLinks={[
+        { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+        { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/patrady/blog-engineering' },
+      ]}
+    />
   </slot>
 </Layout>
