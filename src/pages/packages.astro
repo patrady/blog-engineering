@@ -1,0 +1,76 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import MidiKeyboard from '~/components/MidiKeyboard';
+
+const metadata = {
+  title: 'Packages',
+  description: 'Open source packages and tools by Patrick Brady',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero tagline="Open Source">
+    <Fragment slot="title">
+      <span class="text-accent dark:text-white">Packages</span>
+    </Fragment>
+
+    <Fragment slot="subtitle"> Tools and libraries I've built and maintain. </Fragment>
+  </Hero>
+
+  <!-- chord-js Section -->
+  <section class="py-12 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <!-- Package Header -->
+      <div class="mb-12">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+          <h2 class="text-3xl font-bold tracking-tight dark:text-white">@patrady/chord-js</h2>
+          <a
+            href="https://www.npmjs.com/package/@patrady/chord-js"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0H1.763zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-10.39L5.13 5.323z"
+              ></path>
+            </svg>
+            View on npm
+          </a>
+        </div>
+        <p class="text-lg text-muted dark:text-slate-300 max-w-3xl">
+          A TypeScript library for chord recognition and music theory. Pass in a set of notes and get back the chord
+          name, or explore chord structures programmatically.
+        </p>
+      </div>
+
+      <!-- Interactive Demo -->
+      <div class="bg-gray-50 dark:bg-slate-800 rounded-xl p-6 md:p-10">
+        <h3 class="text-xl font-semibold mb-6 text-center dark:text-white">Interactive Demo</h3>
+        <MidiKeyboard client:load />
+      </div>
+
+      <!-- Usage Example -->
+      <div class="mt-12">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">Quick Start</h3>
+        <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+          <pre class="text-sm text-gray-100"><code>npm install @patrady/chord-js</code></pre>
+        </div>
+        <div class="bg-gray-900 rounded-lg p-4 mt-4 overflow-x-auto">
+          <pre
+            class="text-sm text-gray-100"><code>{`import { Chord, Note } from '@patrady/chord-js';
+
+// Create notes from MIDI values
+const notes = [60, 64, 67].map(midi => Note.fromMidi(midi));
+
+// Detect the chord
+const chord = Chord.for(notes);
+console.log(chord?.getName()); // "C"`}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
